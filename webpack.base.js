@@ -8,7 +8,16 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           options: {
-            presets: ['@babel/preset-env', '@babel/preset-react']
+            presets: [
+              [
+                '@babel/preset-env',
+                {
+                  // 自动补充浏览器不支持的语法
+                  useBuiltIns: 'usage'
+                }
+              ],
+              '@babel/preset-react'
+            ]
           }
         }
       }

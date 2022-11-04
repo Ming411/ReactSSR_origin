@@ -8,6 +8,7 @@ specifiers:
   '@babel/preset-react': ^7.10.1
   axios: ^0.19.2
   babel-loader: ^8.1.0
+  core-js: '3'
   express: ^4.17.1
   nodemon: ^2.0.4
   npm-run-all: ^4.1.5
@@ -34,6 +35,7 @@ dependencies:
   '@babel/preset-react': 7.18.6_@babel+core@7.19.6
   axios: 0.19.2
   babel-loader: 8.2.5_q4ydpsrmbqywduja5orgah6fgq
+  core-js: 3.26.0
   express: 4.18.2
   nodemon: 2.0.20
   npm-run-all: 4.1.5
@@ -2326,6 +2328,11 @@ packages:
   /core-js/2.6.12:
     resolution: {integrity: sha512-Kb2wC0fvsWfQrgk8HU5lW6U/Lcs8+9aaYcy4ZFc6DDlo4nZ7n70dEgE5rtR0oG6ufKDUnrwfWL1mXR5ljDatrQ==}
     deprecated: core-js@<3.23.3 is no longer maintained and not recommended for usage due to the number of issues. Because of the V8 engine whims, feature detection in old core-js versions could cause a slowdown up to 100x even if nothing is polyfilled. Some versions have web compatibility issues. Please, upgrade your dependencies to the actual version of core-js.
+    requiresBuild: true
+    dev: false
+
+  /core-js/3.26.0:
+    resolution: {integrity: sha512-+DkDrhoR4Y0PxDz6rurahuB+I45OsEUv8E1maPTB6OuHRohMMcznBq9TMpdpDMm/hUPob/mJJS3PqgbHpMTQgw==}
     requiresBuild: true
     dev: false
 
